@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.0" type="template" client="site" method="upgrade">
+	<name>test</name>
+	<version>1.0.0</version>
+	<creationDate>fevrier 2017</creationDate>
+	<author>Saphira Rozas</author>
+	<authorEmail>srozas@logevie.fr</authorEmail>
+	<copyright>Copyright (C) 2017 Logévie All rights reserved.</copyright>
+	<description>TPL_logevie_XML_DESCRIPTION</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>images</folder>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>js</folder>
+		<folder>fonts</folder>
+		<folder>language</folder>
+	</files>
+	<positions>
+		<position>header</position>
+		<position>dashboard</position>
+		<position>newsFeed</position>
+		<position>carousel</position>
+		<position>footer</position>
+	</positions>
+	<languages folder="language">
+		<language tag="fr-FR">fr-FR/fr-FR.tpl_1870j3.ini</language>
+		<language tag="fr-FR">fr-FR/fr-FR.tpl_1870j3.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field 
+					name="templatelogo" 
+					type="media" 
+					default="/home/saphira/Images/"
+					label="TPL_logevie_logo"
+					description="TPL_logevie_logo" />
+				<field 
+					name="templateLogo" 
+					type="color" 
+					default="#2196F3"
+					label="TPL_logevie_BACKGROUND_COLOR_LABEL"
+					description="TPL_logevie_BACKGROUND_COLOR_DESC" />                    
+			</fieldset>
+		</fields>
+	</config>
+</extension>
